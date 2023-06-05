@@ -110,7 +110,7 @@
     display:flex;
     align-items:center;
     flex-direction:column;
-     background:#74ec03;
+     background:yellow;
     
     .app-border
     {
@@ -182,7 +182,7 @@
 }
 }
 
-@media(max-width : 500px){
+@media(max-width : 768px) and (min-width:468px){
     .app-container
     {
         height:100vh;
@@ -255,6 +255,53 @@
     
                 }
             }
+    
+            
+        }
+        
+    }
+}
+
+
+@media(max-width : 467px){
+    .app-container
+    {
+      
+        display:grid;
+        align-items:start;
+        .app-border
+        {
+           
+           .add-border{
+            
+            .add-container
+            {
+                display:grid;
+                grid-template-columns:1fr;
+                grid-template-rows:1fr 1fr;
+                grid-auto-flow:row;
+                column-gap:unset;
+                margin-bottom:5px;
+                row-gap:5px;
+    
+                input
+                {
+                    outline:none;
+                    padding:8px;
+                    border-radius:6px;
+                    border:none;
+                    
+                }
+                button
+                {
+                    border-radius:6px;  
+                    border:none;
+                    cursor:pointer; 
+                    color:#555;
+                }
+            }
+        }
+           
     
             
         }

@@ -27,9 +27,6 @@ function App() {
 
     setState({...state, todolist: todo})
     setState({...state, input:"" })
-
-
-    
   }
 
   const handleDelete = (index) =>{
@@ -106,11 +103,7 @@ function App() {
 
   },[input])
 
-  function clearInputEdit(){
-    setInputEdit(false)
-  }
-
-
+  
 
   return ( 
     <>
