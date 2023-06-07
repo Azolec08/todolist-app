@@ -1,20 +1,25 @@
 import {useEffect,useRef} from 'react'
 import '../style/edit.scss'
 
-export default function edit({inputEdit,handleCancel,handleUpdate,update,handleOnChangeEdit,setEdit,setInputEdit}) {
+export default function edit({
+  inputEdit,
+  handleCancel,
+  handleUpdate,
+  update,
+  handleOnChangeEdit,
+  setEdit,
+  setInputEdit}){
 
   const inputRef = useRef()
 
   useEffect(() => {
     inputRef.current.focus()  
-      if(inputEdit.length > 45 ){
+      if(inputEdit.length > 35 ){
         alert("Input 45 Letters Only")
         setInputEdit("")
         setEdit(false)
         return
       }
-    
-    
   })
   return (
     <>
