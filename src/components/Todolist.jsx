@@ -80,21 +80,26 @@ function App() {
 
       setError("")  
       
-    }else if(input.length < 34){
+    }else if(input.length < 22){
 
       setError("Good")  
       alertRef.current.style = "color:blue"
       
-    }else if(input.length > 34){
-      setError("Bad")  
-      alertRef.current.style = "color:red"  
+    }else if(input.length >= 22 && input.length < 25){
+
+      setError("Warning 25 Letters Only") 
+      alertRef.current.style = "color:red" 
+
+    }else if(input.length > 25){
+      
+      
       const  handleAdd = () =>{
         const list = todolist
         list.push("error")
         
         setState((prev) =>({...prev, todolist : list}))
         setState({...state, input: ""})
-        alert("Input 35  letters only")
+        alert("Input 25  letters only")
         
       }
       handleAdd()

@@ -15,7 +15,7 @@ export default function edit({
   useEffect(() => {
     inputRef.current.focus()  
       if(inputEdit.length > 35 ){
-        alert("Input 45 Letters Only")
+        alert("Input 35 Letters Only")
         setInputEdit("")
         setEdit(false)
         return
