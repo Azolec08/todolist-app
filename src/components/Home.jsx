@@ -1,15 +1,13 @@
-import React from 'react'
+import '../style/home.css'
 import { Link } from 'react-router-dom'
+
+
 
 const Home = () => {
   return (
-    <div className="home-container" style={{height:"100vh",
-     width:"100%", 
-     background:"pink", 
-     display:"flex",
-     alignItems:"center",
-     justifyContent:"center"
-     }}>
+    <>
+    <div className='container' >
+
         <Link to="/Todolist">
             <button style={{
             padding:"20px",
@@ -18,12 +16,15 @@ const Home = () => {
             fontWeight:"bold",
             fontSize:"20px",
             lineHeight:"28px",
-            background:"violet",
+            background:"#444",
             color:"yellow",
             borderRadius:"8px"
-            }}>Create Your Todo <br/> List Now!</button>
+            }}>Click mo para hindi masuka si Jervic</button>
         </Link>
+       
+      
     </div>
+    </>
   )
 }
 
