@@ -109,12 +109,8 @@ function App() {
 
   },[input])
 
-  
   const [darkMode, setDarkMode] = useState("Light")
   
-
-
-
   return ( 
     <>
     <div id={darkMode} className="app-container">
@@ -147,7 +143,7 @@ function App() {
               </div>
             </div>
             ) 
-        }):<h3 style={{color:"#fff", padding:"10px 0 0 0"}}>No Task Found!</h3>
+        }):<h3 style={{color:"#fff", padding:"10px 0 0 0"}}>Mwaaaaa maglagay ka ng data </h3>
         }
         
         </div>

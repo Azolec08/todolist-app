@@ -1,0 +1,16 @@
+.border {
+  height: 200px;
+  width: 300px;
+  background: #eee;
+  display: grid;
+  grid-template-rows: 80px 1fr;
+  justify-items: center;
+}
+.border input {
+  padding: 5px;
+  outline: none;
+}
+.border button {
+  height: 30px;
+  width: 50px;
+}/*# sourceMappingURL=edit.css.map */
